@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Amount:</label>
+<input type="text" id=amount>
+<label style="margin-left: 100px">From Currency:</label>
+<select id="from">
+    <option value="VND">VietNam</option>
+    <option value="USD">USD</option>
+</select>
+<button onclick="doChange()">Convert</button>
+<br>
+Kết quả : <h1 id=ketqua></h1>
+<label style="margin-left: 150px">To Currency:</label>
+<select id="to">
+    <option value="USD">USD</option>
+    <option value="VND">VietNam</option>
+</select>
+<script>
+    <script>
+    function doChange(){
+        let amount = document.getElementById("amount").value;
+        let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+        let result ;
+
+        if ( from === "VND" && to === "USD" ){
+            result = amount / 23000;
+        } else if ( from === "USD" && to === "VND"){
+            result = amount * 23000;
+        } else {
+            result = amount ;
+
+        }
+        document.getElementById("Kết quả").innerText = result ;
+</script>
+</form>
+</body>
+</html>
