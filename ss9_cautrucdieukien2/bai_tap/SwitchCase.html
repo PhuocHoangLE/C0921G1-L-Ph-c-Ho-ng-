@@ -5,42 +5,35 @@
     <title>Tính số ngày trong một tháng</title>
 </head>
 <body>
-<input type="text" id="nhap">
-<button onclick="click">Nhập số tháng</button>
-<p id="ketQua"></p>
+  <input type="text" id="nhap">
+  <button onclick="show()">Tính số ngày</button>
 <script>
-    function click() {
-        let nhap = document.getElementById("nhap").value;
-        let result ;
+    function show() {
+        let month = parseInt(document.getElementById('nhap').value);
 
+        switch (month) {
+            case 1 :
+            case 3 :
+            case 5 :
+            case 7 :
+            case 8 :
+            case 10 :
+            case 12 :
+                document.write("Tháng có 31 ngày");
+                break;
+            case 2 :
+                document.write("Tháng có 28/29 ngày");
+                break;
+            case 4 :
+            case 6 :
+            case 9 :
+            case 11 :
+                document.write("Tháng có 30 ngày");
+                break;
+            default :
+                document.write(" Không xác định ") ;
+        }
     }
-     /* let month ;
-    month = parseInt(prompt("Nhập vào tháng cần biết"))
-    switch (month) {
-        case 1 :
-        case 3 :
-        case 5:
-        case 7:
-        case 8:
-        case 10:
-        case 12:
-            alert("Tháng có 31 ngày")
-            break;
-        case 2 :
-            alert("Tháng có 28/29 ngày")
-            break;
-        case 4 :
-        case 6 :
-        case 9 :
-        case 11 :
-            alert("Tháng có 30 ngày")
-            break;
-         default :
-             alert("Nhập sai tháng vui lòng nhập lại")
-    } */
 </script>
-
-
-
 </body>
 </html>
