@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doanhSo = prompt("Nhập tổng doanh số bán hàng(đơn vị là triệu đông ) :") ;
+    let hoaHong = 0 ;
+    if (doanhSo <= 100){
+        hoaHong = doanhSo * 5 / 100
+    } else if (doanhSo <= 200) {
+        hoaHong = doanhSo * 10 / 100
+    } else if (doanhSo <= 300){
+        hoaHong = doanhSo * 15 / 100
+    }
+    alert("Tổng doanh số là :" +doanhSo+"Triệu đồng" +
+    "\n thì hoa hồng nhận được là : " +hoaHong+ "triệu đồng")
+
+
+</script>
+</body>
+</html>
