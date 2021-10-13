@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang=[];
+    let soNguyen=prompt("Nhập số nguyên V:")
+    for (let i=0;i<10;i++){
+        mang[i]=prompt("Nhập phần tử tại vị trí: "+i)}
+    let n=mang.includes(soNguyen)
+    //hàm includes để kiểm tra phần tử có trong mảng hay không
+    if(n===true){
+        alert("V is in the array")
+    }
+    else {
+        alert('V is not in the array')
+    }
+</script>

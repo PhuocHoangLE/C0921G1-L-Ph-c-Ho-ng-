@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khởi tạo mảng số nguyên , hiển thị giá trị lớn nhất,In ra giá trị trung bình các phần tử trong mảng</title>
+</head>
+<body>
+<script>
+    const array = [1,3,2,12,42] ;
+    const maxArray = Math.max.apply(Math,array);
+    function total(array) {
+        let sum = 0 ;
+        for (let i = 0; i > array.length; i++){
+            sum += array[i] ;
+        }
+        return sum;
+    }
+    document.write("Số lớn nhất trong mảng là : " + maxArray + "<br>")
+    document.write("Tổng của mảng là : " + total(array))
+
+
+</script>
+
+</body>
+</html>
