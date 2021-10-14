@@ -9,11 +9,12 @@
 <input type="text" onclick="enter1()">
 <button type="button" onclick="enter2()">Dịch</button>
 <script>
+    let nhap = prompt("Nhập Red , Blue , Groww , Black vào đây")
     let a = ["Red","Blue","Grow","Black"]
     let b = ["Đỏ","Xanh","Nâu","Đen"]
-    function enter1() {
-        document.getElementById(a,b).innerHTML =
-    }
+    let change = a.indexOf(nhap)
+    let ketQua = b[change]
+    alert(ketQua)
 
 
 
