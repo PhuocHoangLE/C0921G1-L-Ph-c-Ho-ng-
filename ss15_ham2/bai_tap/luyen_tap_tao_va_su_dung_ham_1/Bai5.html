@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"]
+    let b = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"]
+    function ham(nhap) {
+        for (i = 0 ; i < a.length ; i++ )
+            if (nhap === a[i]) {
+                document.write(b[i])
+            }
+
+        }
+
+        let nhap = prompt("Nhập sao cần tìm")
+        ham(nhap) ;
+
+</script>
+
+</body>
+</html>

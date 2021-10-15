@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Tính chu vi và diện tích  </title>
+</head>
+<body>
+<script>
+    function chuVi() {
+        const vi = 2 * pi * r ;
+        document.write("Tổng chu vi hình tròn là : " +vi + "<br>")
+    }
+    function dienTich() {
+        const dien = pi * r * r ;
+        document.write("Tổng diện tích hình tròn là : " +dien)
+    }
+    let pi = 3.14 ;
+    let r = prompt("Nhập số cần tính") ;
+    chuVi(r) ;
+    dienTich(r) ;
+</script>
+
+</body>
+</html>
