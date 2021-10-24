@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Thuế Thu Nhập Lương Nhân Viên</title>
+</head>
+<body>
+<script>
+    let luong = prompt("Nhập lương cá nhân của bạn đơn vị là Triệu đồng")
+    let sothue ;
+    let thuesuat ;
+    if (luong >= 15){
+        sothue = luong *20/100 ;
+        alert("Thuế thu nhập tháng 10 là " + sothue + "%") ;
+    } else if (luong >= 7){
+        sothue = luong *15/100 ;
+        alert("Thuế thu nhập tháng 10 là " + sothue + "%") ;
+    } else {
+        // Nhỏ hơn 7.000.000 triệu đồng
+        sothue = luong *5/100
+        alert("Thuế thu nhập tháng 10 là " + sothue + "%") ;
+    }
+    thuesuat = sothue * luong / 100
+    alert("Tổng thuế cần phải nộp là " +thuesuat)
+    total = thuesuat * luong
+    alert("Tổng lương nhận dược là " + total)
+</script>
+
+</body>
+</html>
